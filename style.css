@@ -2,8 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    font-family: "Bellota", system-ui;
 }
+
+body {
+    background-color: #fff6e8;
+}
+
 
 
 header {
@@ -17,7 +22,7 @@ header {
     justify-content: space-between;
     width: 90%;
     max-width: 1440px;
-    background-color: beige;
+    /* background-color: beige; */
     margin: 0 auto;
     height: 100%;
     align-items: center;
@@ -53,9 +58,25 @@ header {
     border-radius: 10px;
     border: solid 1px #cccccc;
     padding-left: 2.5rem;
-    font-family: "Bellota", system-ui;
+
     font-size: 1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .banner {
     background-image: url(./Assets/imgs/banner.png);
@@ -67,7 +88,7 @@ header {
 
 .titulo span {
     font-size: 48px;
-    
+
 }
 
 .titulo {
@@ -75,7 +96,7 @@ header {
     flex-direction: column;
     align-items: center;
     margin: 100px 0;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
 }
 
 .container {
@@ -84,20 +105,125 @@ header {
     margin: 0 auto;
 }
 
-.titulo hr{
+ .titulo hr{
     width: 300px;
     height: 4px;
     border: none;
     border-radius: 2px;
-    background-color:#FFD188;
+    background-color: #FFD188;
 
 }
 
-.acessivel{
-position: absolute;
-width: 1px;
-height: 1px;
-overflow: hidden;
-clip-path: inset(50%);
-white-space: nowrap;
+.acessivel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
+
+
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 4px 2px #00000025;
+}
+
+
+
+
+.card img {
+    width: 100%;
+}
+
+
+.card p,
+.card span {
+    font-size: 18px;
+    width: 90%;
+}
+
+
+.whatsapp {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: transform 0.5s ease-in-out,
+        filter 0.5s ease-in-out;
+
+}
+
+.whatsapp img {
+    width: 80px;
+    filter: drop-shadow(0 5px 1px #00000025);
+
+
+
+}
+
+
+.whatsapp:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 10px 2px #00000025);
+
+
+}
+
+
+.rodape {
+    width: 100%;
+    height: 60px;
+    background-color: #FFD188;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-family: "Julius Sans One", sans-serif;
+    text-align: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+
+@media screen and (max-width: 600px) {
+    .banner {
+        aspect-ratio: 2.0;
+    }
+}
+
+
+
